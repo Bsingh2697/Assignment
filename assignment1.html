@@ -1,0 +1,36 @@
+<!-- Completed -->
+    
+<!DOCTYPE html>
+<html>
+<head>     
+    <script>
+        changeTest = () => {
+            let i = document.getElementById('input').value;
+            console.log("input = " + i);
+            let s = parseInt(i%60);
+            let m = parseInt((i/60)%60);
+            let h = parseInt((i/60)/60)
+            document.getElementById('output').innerHTML=h+" "+m+" "+s;
+
+        }
+    </script>  
+</head>
+<body>
+
+<h2>Assignment</h2>
+
+<label for="input">Enter no. of seconds</label><br/>
+<input type="number" id="input" height="50px" width="100px"/>
+<br/>
+
+<button type="button" onclick={changeTest()}>Click Me!</button><br/>
+<br/>
+<label for="output">Output</label><br/>
+<textarea id="output" rows="10" cols="50"></textarea>
+<div width="100%" text-align="center">
+</div>
+
+</body>
+</html>
+
+
